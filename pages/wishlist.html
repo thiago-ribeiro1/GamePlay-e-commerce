@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+	<!-- Meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<meta name="description" content="GamePlay Loja Virtual">
+	<meta name="keywords" content="games, gaming, store, comprar jogos, jogos, ps4, ps5, pc, PlayStation, Steam">
+	<meta property="og:image" content="https://gameplay-ecommerce.netlify.app/assets/img/banner1.jpg">
+
+
+	<!-- loader-->
+	<link href="../assets/css/pace.min.css" rel="stylesheet" />
+	<script src="../assets/js/pace.min.js"></script>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600&display=swap"
+		rel="stylesheet">
+	<link href="../assets/css/app.css" rel="stylesheet">
+	<link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+	<link href="../assets/css/icons.css" rel="stylesheet">
+
+	<!-- ==== Título da Página ==== -->
+	<title>Favoritos</title>
+
+	<!-- Ícone -->
+	<link rel="icon" type="image/png" href="../assets/img/icon.ico"> <!-- Ícone -->
+
+</head>
+
+<body>
+
+	<section>
+		<!-- Início Navbar -->
+		<div id="inicio" class="header-content bg-warning">
+			<div class="container-fluid" id="nav-container">
+				<div class="row align-items-center gx-4">
+					<div class="col-auto">
+						<div class="d-flex align-items-center gap-3">
+							<div class="logo">
+								<a href="../index.html">
+									<img src="../assets/img/joystick.png" class="logo-icon" alt="image-logo"
+										width="78px" height="78px" />
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- Barra de Pesquisa Início -->
+					<div class="col-12 col-xl order-4 order-xl-0">
+						<div class="input-group flex-nowrap pb-3 pb-xl-0 search-form">
+							<input type="text" class="form-control w-100 border-dark border border-3"
+								placeholder="Busque por Produtos" id="search-input">
+							<button class="btn btn-primary btn-ecomm border-3" type="button"
+								id="search-button">Buscar</button>
+							<div id="search-results" class="list-group"></div>
+						</div>
+					</div>
+	</section>
+	<!-- Fim Barra de Pesquisa -->
+
+	<!--Início Wrapper-->
+	<div class="page-wrapper">
+		<div class="page-content">
+
+			<section class="py-3 border-bottom border-top d-none d-md-flex bg-light">
+				<div class="container">
+					<div class="page-breadcrumb d-flex align-items-center">
+						<h3 class="breadcrumb-title pe-3">Meus Favoritos</h3>
+						<div class="ms-auto">
+							<nav aria-label="breadcrumb">
+								<div class="breadcrumb mb-0 p-0">
+									<a class="breadcrumb-item"><a href="../index.html"><i class="bx bx-home-alt"></i>
+											Home</a>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Produtos Favoritos-->
+			<section class="py-4">
+				<div class="container">
+					<div class="product-grid">
+						<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="wish-list">
+							<div class="col">
+								<!-- Produtos favoritos serão adicionados aqui -->
+							</div>
+						</div> <!-- Fim row -->
+					</div> <!-- Fim product-grid -->
+				</div> <!-- Fim container -->
+			</section> <!-- Fim Produtos Favoritos -->
+
+			<div>
+				<button onclick="goBack()" class="btn btn-dark">Voltar</button>
+			</div>
+
+			<script>// Função para voltar à página anterior
+				function goBack() {
+					window.history.back();
+				}
+			</script>
+
+			<!-- Footer -->
+			<footer class="bg-dark text-white text-center py-4">
+				<div class="container">
+					<div class="row">
+						<!-- Logomarca -->
+						<div class="col-md-6 text-left ">
+							<img src="../assets/img/logo_unifacisa.png" alt="Logomarca Unifacisa" class="img-fluid"
+								width="400px">
+							<img id="logo_gameplay_footer" src="../assets/img/gameplay-logo-white.png"
+								alt="Logomarca GamePlay" width="400">
+						</div>
+
+						<!-- Grupo -->
+						<div class="col-md-6">
+							<h5 style="color: white;">Conectar Banco de Dados Com POO</h5>
+							<br>
+							<h6 id="nome-grupo">Grupo:</h6>
+							<h6 id="nome-grupo">Diogo Diniz Spínola Ribeiro | João Vitor Silva Monteiro |
+								Keven Max
+								Bezerra de
+								Sousa | Thiago Ribeiro Ramos
+								Silva
+							</h6>
+							<br>
+						</div>
+					</div>
+				</div>
+
+				<!-- Subir ao topo da página -->
+				<div class="go-top"><i class='bx bx-up-arrow-alt'></i></div>
+
+				<div class="social-icons">
+					<!-- Ícones Git e Linkedin -->
+					<a href="https://github.com/spinola109" target="_blank"><i class="fa fa-github fa-2x"
+							aria-hidden="true"></i></a>
+					<p>@spinola109</p>
+					<a href="https://www.linkedin.com/in/diogo-sp%C3%ADnola-051295291" target="_blank"><i
+							class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+				</div>
+
+				<div class="social-icons">
+					<!-- Ícones Git e Linkedin -->
+					<a href="https://github.com/JoaoVSMonteiro" target="_blank"><i class="fa fa-github fa-2x"
+							aria-hidden="true"></i></a>
+					<p>@JoaoVSMonteiro</p>
+					<a href="https://www.linkedin.com/in/jo%C3%A3o-monteiro-8411aa309/" target="_blank"><i
+							class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+				</div>
+
+				<div class="social-icons">
+					<!-- Ícones Git e Linkedin -->
+					<a href="https://github.com/Mkevenmax" target="_blank"><i class="fa fa-github fa-2x"
+							aria-hidden="true"></i></a>
+					<p>@Mkevenmax</p>
+					<a href="https://www.linkedin.com/in/keven-max-050501284" target="_blank"><i
+							class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+				</div>
+
+				<div class="social-icons">
+					<!-- Ícones Git e Linkedin -->
+					<a href="https://github.com/thiago-ribeiro1" target="_blank"><i class="fa fa-github fa-2x"
+							aria-hidden="true"></i></a>
+					<p>@thiago-ribeiro1</p>
+					<a href="https://www.linkedin.com/in/thiago-ribeiro-ramos" target="_blank"><i
+							class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+				</div>
+
+			</footer>
+			<!-- Fim do Footer -->
+
+			<!-- JS -->
+			<script src="../assets/js/bootstrap.bundle.min.js"></script>
+			<script src="../assets/js/jquery.min.js"></script>
+
+
+			<!-- Favoritos JS -->
+			<script type="text/javascript" src="../assets/js/addToFavorites.js"></script>
+			<script type="text/javascript" src="../assets/js/updateFavorites.js"></script>
+			<script type="text/javascript" src="../assets/js/removeFromFavorites.js"></script>
+			<script type="text/javascript" src="../assets/js/favoritos.js"></script>
+
+
+
+</body>
+
+</html>

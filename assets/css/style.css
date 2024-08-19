@@ -1,0 +1,856 @@
+/* Importação de fontes do Google Fonts */
+
+@import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i&display=swap");
+/* Animate CSS */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato"; 
+  font-size: 15px; /* Tamanho padrão da fonte no body */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove a borda ao focar em um elemento */
+:focus {
+  outline: 0 !important;
+}
+
+a {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #000000; /* Cor padrão do texto dos links */
+  text-decoration: none; /* Remove a sublinhado padrão dos links */
+}
+
+a:hover {
+  color: #002cbb; /* Cor do texto do link quando mouse :hover */
+  text-decoration: none; 
+}
+
+h1, h2, h3, h6 {
+  color: #000000; /* Define a cor padrão do texto dos títulos h1, h2, h3, h6 */
+  font-family: "Cabin", 'Times New Roman', Times, serif; /* Fonte padrão dos títulos para Cabin */
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-70 {
+  padding-bottom: 70px;
+}
+
+/* Títulos PlayStation 5, PLayStation 4 e PC */
+.section-title { 
+  text-align: center; /* Centraliza o texto */
+  max-width: 720px; /* Define a largura máxima como 720px */
+  margin-left: auto; 
+  margin-right: auto; 
+  margin-bottom: 50px; /* Margem inferior */
+}
+
+/* Estilizar o texto h2 dentro da seção */
+.section-title h2 {
+  margin-bottom: 0; /* Remover a margem inferior */
+  font-size: 35px; /* Define o tamanho da fonte */
+  font-weight: 700; /* Define o peso da fonte */
+}
+ 
+/*================================================
+Navbar CSS
+=================================================*/
+
+/* Esconde a marca da navbar */
+.navbar-area .navbar-brand .white-logo {
+  display: none;
+  position: fixed !important;
+}
+
+/* Define estilos para a navbar quando estiver fixa no topo da página */
+.navbar-area.header-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+  background: #ffffff !important;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* Define estilos para a navbar quando estiver fixa e visível */
+.navbar-area.header-sticky.is-sticky {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Define estilos para a navbar quando rolar a página para cima */
+.navbar-area.header-sticky.scrollUp {
+  -webkit-transform: translateY(-85px);
+          transform: translateY(-85px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Margens para os itens da navbar */
+.navbar-area.navbar-style-two .xton-nav .navbar .navbar-nav {
+  margin-left: 50px;
+  margin-right: auto;
+}
+
+/* Esconde o menu responsivo */
+.xton-responsive-nav {
+  display: none;
+}
+
+.xton-responsive-nav .logo .white-logo {
+  display: none;
+}
+
+/* Define a cor de fundo da navbar */
+.xton-nav {
+  background-color: #ffffff;
+}
+
+/* Define o espaçamento interno da navbar */
+.xton-nav .container-fluid {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* Define o espaçamento interno e remove a posição absoluta da navbar */
+.xton-nav .navbar {
+  position: inherit;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Define estilos para a marca da navbar */
+.xton-nav .navbar .navbar-brand {
+  font-size: inherit;
+  line-height: 1;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Remove o estilo padrão da lista de itens da navbar */
+.xton-nav .navbar ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+.xton-nav .navbar .navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.xton-nav .navbar .navbar-nav .nav-item {
+  position: relative;
+}
+
+/* Define estilos para os links dos itens da navbar */
+.xton-nav .navbar .navbar-nav .nav-item a {
+  color: #000000;
+  font-size: 16.5px;
+  font-weight: 600;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 13px;
+  margin-right: 13px;
+}
+
+.xton-nav .navbar .navbar-nav .nav-item a i {
+  font-size: 18px;
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  margin-left: -3px;
+  margin-right: -3px;
+}
+
+/* Quando o link na barra de navegação é passado com o mouse, a cor do texto é alterada para azul */
+.xton-nav .navbar .navbar-nav .nav-item a:hover,
+.xton-nav .navbar .navbar-nav .nav-item a:focus,
+.xton-nav .navbar .navbar-nav .nav-item a.active {
+  color: #001aae;
+}
+
+/* O último item da barra de navegação não terá margem à direita. */
+.xton-nav .navbar .navbar-nav .nav-item:last-child a {
+  margin-right: 0;
+}
+
+/* O primeiro item da barra de navegação não terá margem à esquerda. */
+.xton-nav .navbar .navbar-nav .nav-item:first-child a {
+  margin-left: 0;
+}
+
+/* Quando o mouse passa sobre um item na barra de navegação, a cor do texto é alterada para azul */
+.xton-nav .navbar .navbar-nav .nav-item:hover a {
+  color: #001aae;
+}
+
+/* Estilos para o menu suspenso que aparece ao passar o mouse sobre um item na barra de navegação. */
+.xton-nav .navbar .navbar-nav .nav-item .dropdown-menu {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  position: absolute;
+  border: none;
+  top: 70px;
+  left: 0;
+  width: 250px;
+  z-index: 99;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 0;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+/* Estilos para os links dentro do menu suspenso. */
+.xton-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
+  padding: 13px 20px 11px;
+  margin: 0;
+  position: relative;
+  display: block;
+  color: #666666;
+  border-bottom: 1px dashed #e5e5e5;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Cabin";
+}
+
+/* Quando um link dentro do menu suspenso é passado com o mouse ou focado, a cor do texto é alterada para azul */
+.xton-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover,
+.xton-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:focus {
+  color: #001aae;
+}
+
+.xton-nav .navbar .navbar-nav .nav-item:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* Estilos mobile em telas menores até 991px */
+@media only screen and (max-width: 991px) {
+  .xton-responsive-nav {
+    display: block;
+  }
+  .xton-responsive-nav .xton-responsive-menu {
+    position: relative;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .mean-nav {
+    margin-top: 45px;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .mean-nav ul {
+    font-size: 15px;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .mean-nav ul li a.active {
+    color: #001aae;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .mean-nav ul li li a {
+    font-size: 15px;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .navbar-nav {
+    overflow-y: scroll;
+    height: 306px;
+    -webkit-box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.1);
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .navbar-nav .nav-item.megamenu .dropdown-menu .nav-item {
+    overflow: hidden;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .navbar-nav .nav-item.megamenu .dropdown-menu .nav-item .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .navbar-nav .nav-item.megamenu .dropdown-menu .nav-item .row {
+    display: block;
+    -ms-flex-wrap: unset;
+        flex-wrap: unset;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: -20px;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .navbar-nav .nav-item.megamenu .dropdown-menu .nav-item .row .col {
+    -ms-flex-preferred-size: unset;
+        flex-basis: unset;
+    -webkit-box-flex: unset;
+        -ms-flex-positive: unset;
+            flex-grow: unset;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 20px;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .navbar-nav .nav-item.megamenu .dropdown-menu .nav-item .row .col:last-child {
+    margin-bottom: 15px;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .navbar-nav .nav-item.megamenu .dropdown-menu .nav-item a {
+    width: 100%;
+    float: unset;
+    display: block;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .navbar-nav .nav-item.megamenu .dropdown-menu .submenu-title {
+    color: #000000;
+    position: relative;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 13.5px;
+    font-weight: 600;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .navbar-nav .nav-item.megamenu .dropdown-menu .submenu-title::before {
+    width: 30px;
+    height: 1px;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: #001aae;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .navbar-nav .nav-item.megamenu .dropdown-menu .submenu-title:first-child {
+    margin-top: 5px;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .navbar-nav .nav-item.megamenu .dropdown-menu a {
+    border-bottom: none !important;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .navbar-nav .nav-item.megamenu .dropdown-menu .mean-expand {
+    display: none !important;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .navbar-nav .nav-item.megamenu .dropdown-menu .megamenu-submenu {
+    width: auto;
+    overflow: hidden;
+    display: block !important;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .navbar-nav .nav-item.megamenu .dropdown-menu .megamenu-submenu li a {
+    border: none;
+    margin-top: 15px;
+    color: #666666;
+    padding: 0;
+    font-weight: 400;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .navbar-nav .nav-item.megamenu .dropdown-menu .megamenu-submenu li a:hover, .xton-responsive-nav .xton-responsive-menu.mean-container .navbar-nav .nav-item.megamenu .dropdown-menu .megamenu-submenu li a.active {
+    color: #001aae;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .navbar-nav .nav-item.megamenu .dropdown-menu .megamenu-submenu .aside-trending-products {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .navbar-nav .nav-item.megamenu .dropdown-menu .megamenu-submenu .aside-trending-products img {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .navbar-nav .nav-item.megamenu .dropdown-menu .megamenu-submenu .aside-trending-products .category {
+    position: absolute;
+    left: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .navbar-nav .nav-item.megamenu .dropdown-menu .megamenu-submenu .aside-trending-products .category h4 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .navbar-nav .nav-item.megamenu .dropdown-menu .megamenu-submenu .aside-trending-products .link-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .navbar-nav .nav-item.megamenu .dropdown-menu .megamenu-submenu .aside-trending-products:not(:first-child) {
+    margin-top: 15px;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .navbar-nav .nav-item.megamenu .dropdown-menu .megamenu-submenu .aside-trending-products:hover img {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .navbar-nav .nav-item.megamenu .dropdown-menu .megamenu-submenu .aside-trending-products:hover .category {
+    bottom: 10px;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .navbar-nav .nav-item.megamenu .dropdown-menu .brand-slides {
+    margin-top: 0;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .navbar-nav .nav-item.megamenu .dropdown-menu .brand-slides .brand-item a {
+    display: block !important;
+    padding: 20px !important;
+    width: auto !important;
+  }
+  .xton-responsive-nav .xton-responsive-menu.mean-container .others-option {
+    display: none;
+  }
+  .xton-responsive-nav .mean-container a.meanmenu-reveal {
+    color: #000000;
+  }
+  .xton-responsive-nav .mean-container a.meanmenu-reveal span {
+    background: #000000;
+    position: relative;
+    top: 8px;
+    margin-top: -10px;
+  }
+  .xton-responsive-nav .logo {
+    position: relative;
+    width: 50%;
+    z-index: 999;
+  }
+  .xton-nav {
+    display: none;
+  }
+  .navbar-area {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .navbar-area.header-sticky {
+    display: none;
+  }
+}
+
+/*================================================
+Carousel Tela Inicial
+=================================================*/
+ 
+.banner-bg {
+  background-size: cover;
+  background-position: center;
+  height: 70vh; /* altura da imagem */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Duração da animação para 500ms */
+.animate__animated {
+  animation-duration: 0.5s;
+}
+
+
+/*================================================
+Categorias Banner CSS
+=================================================*/
+
+.categorias-box {
+  margin-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.categorias-box img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.categorias-box .content {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #ffffff;
+  -webkit-box-shadow: 1px 1px 3px rgba(136, 136, 136, 0.19);
+          box-shadow: 1px 1px 3px rgba(136, 136, 136, 0.19);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.categorias-box .content h3 {
+  margin-bottom: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.categorias-box:hover img { /* box:hover mexer na imagem ao passar mouse por cima */
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+.categorias-box:hover .content {
+  background-color: #001aae;
+}
+
+.categorias-box:hover .content h3 {
+  color: #ffffff;
+}
+
+/*================================================
+Produtos CSS
+=================================================*/
+
+.jogos-box {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.jogos-box .img-jogos {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.jogos-box .img-jogos a {
+  position: relative;
+  display: block;
+}
+
+.jogos-box .img-jogos a img {
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.jogos-box .img-jogos a .hover-image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+.jogos-box .jogos {
+  margin-top: 20px;
+  position: relative;
+}
+
+.jogos-box .jogos .category {
+  display: block;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+  color: #001aae;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.jogos-box .jogos h3 {
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.jogos-box .jogos h3 a {
+  display: inline-block;
+  color: #000000;
+}
+
+.jogos-box .jogos h3 a:hover {
+  color: #001aae;
+}
+
+.jogos-box .jogos .preco {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Quando o mouse passa sobre a caixa de produtos, a imagem principal dos produtos fica invisível e é ampliada em 7%  */
+.jogos-box:hover .img-jogos a .main-image {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+}
+
+/* Quando o mouse passa sobre a caixa de produtos, a imagem de sobreposição dos produtos fica visível e volta ao tamanho original. */
+.jogos-box:hover .img-jogos a .hover-image {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/* Footer */
+
+footer.bg-dark {
+  background-color: rgb(0, 0, 0) !important; /* Cor de fundo do Footer */
+}
+
+/*Altera cor do nome do grupo*/
+.col-md-6 #nome-grupo{
+  color: #ffffff !important;
+}
+/* Icones e redes sociais dos integrantes*/
+.social-icons{
+justify-content: center;
+display: inline-block;
+column-gap: 20px;
+margin: 10px;
+}
+
+#logo_gameplay_footer{
+  margin-top: 25px;
+}
+
+/*================================================
+Go Top CSS
+=================================================*/
+.go-top {
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 24px;
+} 
+
+.go-top {
+  position: fixed;
+  cursor: pointer;
+  bottom: -42px;
+  right: 15px;
+  color: #ffffff;
+  background-color: #001aae;
+  z-index: 4;
+  width: 42px;
+  text-align: center;
+  height: 42px;
+  line-height: 42px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 28px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 5px 5px 0 0;
+}
+
+.go-top i {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 55%;
+  -webkit-transform: translateY(-55%);
+          transform: translateY(-55%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+} 
+
+.go-top.active {
+  bottom: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.go-top:hover i {
+  margin-top: -3px;
+}
+
+.btn .btn-primary { /* botão venda / adicionar estoque */
+  border: none;
+  margin-bottom: 20px;
+}
+
+/* Estilização da barra de pesquisa e resultados */
+.search-form {
+  position: relative;
+  max-width: 80%;
+  
+}
+
+#search-results {
+  position: absolute;
+  top: 100%;
+  left: 0; /* Alinhar os resultados à esquerda do campo de pesquisa */
+  right: 0; /* Estender os resultados até a borda direita do campo de pesquisa */
+  z-index: 1000;
+  display: none;
+  background: white;
+  border: 1px solid #ccc; /* Adiciona uma borda aos resultados */
+  max-height: 200px; /* Limita a altura máxima dos resultados para 200px, adicionando uma barra de rolagem se necessário */
+  overflow-y: auto;
+}
+
+/* Estilização dos itens da lista de resultados de pesquisa */
+#search-results .list-group-item {
+  cursor: pointer; /* Define o cursor para indicar que o item é clicável */
+} 
+
+/* Header */
+
+/* Define a cor de fundo do menu superior */
+.header-wrapper .top-menu {
+	background-color: #212529;
+}
+
+/* Define a cor do texto para títulos e links no menu superior */
+.header-wrapper .shiping-title,
+.header-wrapper .top-menu .nav-link {
+    color: #dfdfdf;
+}
+
+/* Estiliza os links sociais: tamanho, alinhamento, borda e cor de fundo */
+.header-wrapper .top-menu .social-link .nav-link {
+	font-size: 15px;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: transparent;
+	border: 1px solid transparent;
+	text-align: center;
+	border-radius: 50%;
+	color: #ffffff;
+	margin: 0 3px;
+}
+
+/* Efeito de hover para links sociais */
+.header-wrapper .top-menu .social-link .nav-link:hover {
+	background: rgba(255, 255, 255, 0.15);
+	border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Define a aparência dos links de navegação no menu principal */
+.primary-menu .navbar-nav a.nav-link {
+    color: #212529;
+	font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+/* Efeito de hover e estado ativo dos links de navegação */
+.primary-menu .navbar-nav a.nav-link:hover,
+.primary-menu .navbar-nav a.nav-link:focus,
+.primary-menu .nav-link.active {
+	background-color: #001aae;
+}
+
+/* Estiliza itens do menu dropdown */
+.primary-menu .dropdown-menu .dropdown-item {
+	color: #212529;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+/* Define a cor de fundo do menu principal */
+.primary-menu {
+    background-color: #ffffff;
+}
+
+/* Estiliza menus suspensos em telas maiores */
+@media all and (min-width: 1200px) {
+    .primary-menu {
+        background-color: transparent;
+    }
+
+    /* Define a altura dos links de navegação em telas grandes */
+    .primary-menu .navbar-nav a.nav-link {
+        height: 65px;
+    }
+
+    /* Exibe o menu suspenso ao passar o mouse */
+    .primary-menu .navbar-nav .nav-item:hover > .dropdown-menu,
+    .primary-menu .navbar-nav .nav-item:hover > .submenu {
+        display: block;
+    }
+}
+
+/* Animação para dropdowns */
+@keyframes animdropdown {
+    from {
+        transform: translate3d(0, 6px, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+/* Botão Pesquisa */
+#search-button :hover {
+  background-color: green; 
+  border-radius: 5px; 
+  color: green;
+} 
+
+#nav-container {
+  background-color: gainsboro;
+}
+
+/* Ícones bx tamanho */
+
+.bx {
+  font-size: 1.7rem; 
+}
+ 
+
+/* Botão remover do carinho */
+
+.cart-product-cancel {
+  cursor: pointer;
+  color: red; /* Cor do ícone de remoção */
+  font-size: 20px; /* Tamanho do ícone */
+}
+
+.cart-product-cancel:hover {
+  color: darkred; /* Cor do ícone ao passar o mouse */
+}
+

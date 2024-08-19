@@ -1,0 +1,113 @@
+[
+    {
+      "id": 1,
+      "name": "EA FC 24",
+      "price": 252.90,
+      "image": "assets/img/produtos/01.png"
+    },
+    {
+      "id": 2,
+      "name": "Need For Speed Unbound",
+      "price": 175.95,
+      "image": "assets/img/produtos/02.png"
+    },
+    {
+      "id": 3,
+      "name": "Hogwarts Legacy",
+      "price": 220.99,
+      "image": "assets/img/produtos/03.png"
+    },
+    {
+      "id": 4,
+      "name": "Call of Duty: Modern Warfare III",
+      "price": 361.35,
+      "image": "assets/img/produtos/04.png"
+    },
+    {
+      "id": 5,
+      "name": "Assassin's Creed Mirage",
+      "price": 244.99,
+      "image": "assets/img/produtos/05.png"
+    },
+    {
+      "id": 6,
+      "name": "Spider Man 2",
+      "price": 329.99,
+      "image": "assets/img/produtos/06.png"
+    },
+    {
+      "id": 7,
+      "name": "Red Dead Redemption 2",
+      "price": 110.90,
+      "image": "assets/img/produtos/07.png"
+    },
+    {
+      "id": 8,
+      "name": "Ghost Recon Wildlands",
+      "price": 149.90,
+      "image": "assets/img/produtos/08.png"
+    },
+    {
+      "id": 9,
+      "name": "Dishonored 2",
+      "price": 149.50,
+      "image": "assets/img/produtos/09.png"
+    },
+    {
+      "id": 10,
+      "name": "Bloodborne",
+      "price": 99.90,
+      "image": "assets/img/produtos/10.png"
+    },
+    {
+      "id": 11,
+      "name": "Shadow of the Colossus",
+      "price": 110.00,
+      "image": "assets/img/produtos/11.png"
+    },
+    {
+      "id": 12,
+      "name": "Detroit: Become Human",
+      "price": 100.00,
+      "image": "assets/img/produtos/12.png"
+    },
+    {
+      "id": 13,
+      "name": "League of Legends",
+      "price": 9.99,
+      "image": "assets/img/produtos/13.png"
+    },
+    {
+      "id": 14,
+      "name": "Call of Duty: Warzone 2",
+      "price": 194.99,
+      "image": "assets/img/produtos/14.png"
+    },
+    {
+      "id": 15,
+      "name": "Valorant",
+      "price": 9.99,
+      "image": "assets/img/produtos/15.png"
+    },
+    {
+      "id": 16,
+      "name": "Red Dead Redemption 2",
+      "price": 249.99,
+      "image": "assets/img/produtos/16.png"
+    },
+    {
+      "id": 17,
+      "name": "Minecraft",
+      "price": 199.99,
+      "image": "assets/img/produtos/17.png"
+    },
+    {
+      "id": 18,
+      "name": "Among Us",
+      "price": 20.99,
+      "image": "assets/img/produtos/18.png"
+    },
+  ]
+  
+  
+  
