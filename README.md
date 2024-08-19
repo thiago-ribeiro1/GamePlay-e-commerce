@@ -1,9 +1,8 @@
 # GamePlay-e-commerce
-GamePlay 
-
-E-Commerce web app - Unifacisa
 
 [GamePlay](https://gameplay-ecommerce.netlify.app/)
+
+E-Commerce web app - Unifacisa
 
 ![screen-capture-gameplay](https://github.com/user-attachments/assets/d92f89da-cd93-454d-9e4e-04f6e5b37c09)
 
