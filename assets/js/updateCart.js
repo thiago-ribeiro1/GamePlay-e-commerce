@@ -39,13 +39,13 @@ function updateCartUI() {
     });
 
     // Adicionar botão de checkout no final
-    let checkoutHTML = `
-        <div class="d-grid p-3 border-top">
-            <a href="checkout.html" class="btn btn-dark btn-ecomm">Continuar</a>
-        </div>
-    `;
+    // let checkoutHTML = `
+    //     <div class="d-grid p-3 border-top">
+    //         <a href="checkout.html" class="btn btn-dark btn-ecomm"></a>
+    //     </div>
+    // `;
 
-    cartDropdown.innerHTML += checkoutHTML;
+    // cartDropdown.innerHTML += checkoutHTML;
 }
 
 // Atualizar a interface ao carregar a página

@@ -77,7 +77,7 @@
         { nome: "Assassin's Creed Mirage", id: "playstation5" },
         { nome: "Spider Man 2", id: "playstation5" },
         { nome: "Red Dead Redemption 2", id: "playstation4" },
-        { nome: "Fallout", id: "playstation4" },
+        { nome: "Ghost Recon Wildlands", id: "playstation4" },
         { nome: "Dishonored 2", id: "playstation4" },
         { nome: "Bloodborne", id: "playstation4" },
         { nome: "Shadow of the Colossus", id: "playstation4" },
@@ -294,11 +294,17 @@ function showModal(message) {
     var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
     myModal.show();
 
-    // // Adicionar ouvintes de eventos para os botões "Fechar" e "x"
-    // document.querySelector('.btn-close').addEventListener('click', hideModal);
-    // document.querySelector('.btn-secondary').addEventListener('click', hideModal);
+    // // Funções para os clientes fecharem a box tanto no X quanto no fechar
 
+    document.querySelector('.btn-close').addEventListener('click', function () {
+        myModal.hide();
+    });
+
+    document.querySelector('.btn-secondary').addEventListener('click', function () {
+        myModal.hide();
+    });
     
+
     
 }
 
