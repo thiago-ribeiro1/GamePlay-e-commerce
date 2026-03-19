@@ -705,8 +705,14 @@ Go Top CSS
 /* Estilização da barra de pesquisa e resultados */
 .search-form {
   position: relative;
-  max-width: 80%;
-  
+  max-width: 50%;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .search-form {
+    max-width: 100%;
+  }
 }
 
 #search-results {
